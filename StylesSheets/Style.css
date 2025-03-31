@@ -1,22 +1,28 @@
 .fullWidthContainer{
     width: 100%;
+    height: 0 auto;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
 }
 /* Home*/
 nav{
-    background-color: lightgreen;
+    background-color: clear;
 }
 nav ul{
     text-align: center;
     font-size: 1.2em;
+    color: black;
 }
 nav ul li{
     list-style-type: none;
-    background-color: lightgreen;
+    background-color: lightskyblue;
     display: inline;
     padding: 15px;
     margin: 5px;
     border: 2px;
     border-radius: 10px;
+    color: black;
 }
 nav ul li a {
     color: black;
@@ -30,7 +36,7 @@ footer{
     margin: 0;
     bottom: 0px;
     width: 100%;
-    background-color: lightgreen;
+    background-color: lightskyblue;
 }
 body{
     background-color: lightblue;
@@ -39,11 +45,13 @@ h1{
     text-align: center;
     font-size: 3em;
     font-family: sans-serif;
+    color: black;    
 }
 h3{
     text-align: center;
     font-size: 2em;
     font-family: sans-serif;
+    color: black;
 }
 p{
     text-align: center;
@@ -86,6 +94,32 @@ header{
     color: navajowhite;
     border: 1px solid black;
 }
+#scrollToTop, #scrollToBottom {
+    position: fixed; 
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTop {
+    bottom: 80px; 
+    right: 20px; 
+    display: none; 
+}
+
+#scrollToBottom {
+    bottom: 20px; 
+    right: 20px; 
+}
+
+#scrollToTop:hover, #scrollToBottom:hover {
+    background-color: darkorange;
+}
 
 /*contactus*/
 label{
@@ -125,7 +159,8 @@ body{
     margin: 10px;
 }
 main{
-    margin: 15px 200px;
+    width: 70%;
+    margin: 0 auto;
     padding: 20px;
     border: black solid 1px;
     background: white;
@@ -147,9 +182,9 @@ li{
     text-align: center;
 }
 .map iframe{
-    width: 80%;
+    width: 80% auto;
     max-width: 800px;
-    height: 400px;
+    height: 400px auto;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -171,7 +206,89 @@ li{
     padding-left: 10px; 
     list-style-type: decimal; 
 }
-
 .boldFactors li {
     margin-bottom: 10px; 
+}
+ol {
+    list-style-type: decimal;    
+    margin-left: 20px; 
+    padding-left: 20px; 
+}
+ol li {
+    margin-bottom: 10px; 
+}
+ol, ul {
+    list-style-type: none; 
+}
+aside{
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    width: 25%;
+    float: right;
+}
+.usefulLinks{
+    list-style: decimal;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+.usefulLinks li{
+    margin-bottom: 10px;
+    display: block;
+}
+.usefulLinks a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.usefulLinks a:hover{
+    color: blue;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px 0; 
+}
+
+/*doctor*/
+.doctors{
+    column-count: 3;
+    column-rule: 1px solid black;
+    column-gap: 50px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+/*percentage*/
+table {
+    width:80%;
+    border :1px solid white;
+    border-collapse: collapse;
+    font-size:x-large;
+    text-align: center;
+    vertical-align: middle;
+    padding :2px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+th,td {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+thead th {
+  width: 25%;
+}
+
+.pregnancy_tab
+{
+    color: black;
 }

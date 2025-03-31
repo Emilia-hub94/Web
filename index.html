@@ -16,23 +16,22 @@
             <img style="float: left; margin-right: 10px;" src="image\logo.jpg" alt="logo" width="110">         
             <h1>What is an Migraines?</h1>
          <nav>
-             <ul>
+            <ul>
                 <li id="active"> <a href="index.html"> Home </a></li>
-                <li> <a href="migraines.html"> Migraines Types </a></li>
                 <li> <a href="causes.html"> Causes</a></li>
-                <li> <a href="management.html" > Management Techniques</a></li>
-                <li> <a href="Frequency.html" > Frequency Reduction Adivce </a></li>
+                <li> <a href="percentage.html">Percentage</a></li>
+                <li> <a href="doctors.html">Doctors</a></li>
                 <li> <a href="contactus.html"> Contact Us</a></li>
-             </ul>
+            </ul>
          </nav>
         </header>
         <main> <!-- Mian Section of content on page-->
-         <section> <!-- Section groupung of content-->
+         <section>
              <h3>What is an Migraines?</h3>
              <p>A migraine is much more than a bad headache. It can cause debilitating, throbbing, one-sided head pain that can leave you in bed for days. Movement, lights, sounds and other triggers may cause symptoms like fatigue, nausea, vision changes, irritability and more. <a href="https://my.clevelandclinic.org/health/diseases/5005-migraine-headaches"> read more..</a> </p>
-         </section >
-         <aside> <!-- Aside grouping of content, use css to render to the screen-->
-             <hr>
+             <button id="scrollToTop">Go to Top</button>
+             <button id="scrollToBottom">Go to Bottom</button>
+            </section >
              <h3>Different Types Of Migraines.</h3>
              <p>There are 14 different types of migraines that are different from each other and have different affect on people. These are the different types of Migraines:</p>
                 <hr>
@@ -80,18 +79,43 @@
                   <img class="fullWidthContent" src="image\Cyclic vomiting syndrome.webp" height="300" width="300">
                   <hr>
              </ul>
-         </aside >
         </main>
         <footer>
             <ul>
              <li class="navFooter" > <a href="index.html"> Home </a></li>
-             <li class="navFooter"> <a href="migraines.html"> Migraines Types </a></li>
              <li class="navFooter"> <a href="causes.html"> Causes</a></li>
-             <li class="navFooter"> <a href="management.html" > Management Techniques</a></li>
-             <li class="navFooter"> <a href="Frequency.html" > Frequency Reduction Adivce </a></li>
-             <li class="navFooter"> <a href="contactus.html"> Contact Us</a></li>
+             <li> <a href="percentage.html">Percentage</a></li>
+             <li> <a href="doctors.html">Doctors</a></li>
+             <li> <a href="contactus.html"> Contact Us</a></li>
             </ul>
             <p>&copy;Copyright &#46;2025 Web Design Fundamentals</p>
         </footer>
+        <script>
+            const scrollToTopButton = document.getElementById("scrollToTop");
+            const scrollToBottomButton = document.getElementById("scrollToBottom");
+        
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) { 
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            });
+        
+           
+            scrollToTopButton.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0, 
+                    behavior: "smooth" 
+                });
+            });
+        
+            scrollToBottomButton.addEventListener("click", function () {
+                window.scrollTo({
+                    top: document.body.scrollHeight, 
+                    behavior: "smooth" 
+                });
+            });
+        </script>
     </body>
 </html>
